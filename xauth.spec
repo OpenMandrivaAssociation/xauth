@@ -1,15 +1,18 @@
 Name: xauth
 Version: 1.0.2
-Release: %mkrel 2
+Release: %mkrel 3
 Epoch: 1
 Summary: X authority file utility
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License: MIT
-BuildRequires: x11-util-macros	>= 1.1.5
-BuildRequires: libx11-devel	>= 1.1.3
-BuildRequires: libxext-devel	>= 1.0.3
-BuildRequires: libxmu-devel	>= 1.0.4
+BuildRoot: %{_tmppath}/%{name}-root
+ 
+BuildRequires: libx11-devel >= 1.0.0
+BuildRequires: libxau-devel >= 1.0.0
+BuildRequires: libxext-devel >= 1.0.0
+BuildRequires: libxmu-devel >= 1.0.0
+BuildRequires: x11-util-macros >= 1.0.1
 
 Conflicts: mkxauth < 1.7-11mdv2007.0
 
