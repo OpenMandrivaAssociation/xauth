@@ -5,6 +5,7 @@ Epoch: 1
 Summary: X authority file utility
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Patch: xauth-1.0.3-fix-format.patch
 License: MIT
 BuildRoot: %{_tmppath}/%{name}-root
  
@@ -24,6 +25,7 @@ case when using remote logins or granting access to other users).
 
 %prep
 %setup -q -n %{name}-%{version}
+%patch -p0
 
 %build
 %configure	--x-includes=%{_includedir}\
