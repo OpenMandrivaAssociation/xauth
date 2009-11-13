@@ -1,6 +1,6 @@
 Name: xauth
 Version: 1.0.4
-Release: %mkrel 1
+Release: %mkrel 2
 Epoch: 1
 Summary: X authority file utility
 Group: Development/X11
@@ -13,6 +13,9 @@ BuildRequires: libxau-devel >= 1.0.0
 BuildRequires: libxext-devel >= 1.0.0
 BuildRequires: libxmu-devel >= 1.0.0
 BuildRequires: x11-util-macros >= 1.0.1
+
+# This package was used in the transition to modular:
+Obsoletes: xorg-x11-xauth
 
 Conflicts: mkxauth < 1.7-11mdv2007.0
 
