@@ -1,6 +1,6 @@
 Name: xauth
-Version: 1.0.5
-Release: %mkrel 2
+Version: 1.0.6
+Release: %mkrel 1
 Epoch: 1
 Summary: X authority file utility
 Group: Development/X11
