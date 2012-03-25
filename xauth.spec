@@ -1,12 +1,11 @@
 Name: xauth
-Version: 1.0.6
-Release: %mkrel 1
+Version: 1.0.7
+Release: 1
 Epoch: 1
 Summary: X authority file utility
 Group: Development/X11
-Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source0: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License: MIT
-BuildRoot: %{_tmppath}/%{name}-root
  
 BuildRequires: libx11-devel >= 1.0.0
 BuildRequires: libxau-devel >= 1.0.0
@@ -35,13 +34,8 @@ case when using remote logins or granting access to other users).
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %{_bindir}/xauth
 %{_mandir}/man1/xauth.*
