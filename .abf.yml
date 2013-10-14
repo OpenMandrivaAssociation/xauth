@@ -1,3 +1,4 @@
----
-sources:
+removed_sources:
   xauth-1.0.7.tar.bz2: 54f93f0539a98900c36c4f7c8ae933f77699dc7b
+sources:
+  xauth-1.0.8.tar.bz2: 481d42acbfe30f8593be07d70c258b18f8c877db

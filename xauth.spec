@@ -1,14 +1,12 @@
 Name:		xauth
-Version:	1.0.7
-Release:	2
+Version:	1.0.8
+Release:	1
 Epoch:		1
 Summary:	X authority file utility
 Group:		Development/X11
 License:	MIT
 URL:		http://xorg.freedesktop.org
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
-Patch0:		aarch64.patch
-
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xau)
 BuildRequires:	pkgconfig(xext)
@@ -23,11 +21,11 @@ case when using remote logins or granting access to other users).
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
-%configure	--x-includes=%{_includedir}\
-		--x-libraries=%{_libdir}
+%configure2_5x	--x-includes=%{_includedir}\
+		--x-libraries=%{_libdir} \
+		--enable-ipv6
 
 %make
 
@@ -36,5 +34,6 @@ case when using remote logins or granting access to other users).
 
 %files
 %{_bindir}/xauth
+%{_bindir}/test_xauth
 %{_mandir}/man1/xauth.*
 
