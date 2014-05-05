@@ -1,6 +1,6 @@
 Name:		xauth
-Version:	1.0.8
-Release:	5
+Version:	1.0.9
+Release:	1
 Epoch:		1
 Summary:	X authority file utility
 Group:		Development/X11
