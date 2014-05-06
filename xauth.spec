@@ -34,6 +34,5 @@ case when using remote logins or granting access to other users).
 
 %files
 %{_bindir}/xauth
-%{_bindir}/test_xauth
 %{_mandir}/man1/xauth.*
 
