@@ -1,6 +1,6 @@
 Name:		xauth
 Version:	1.0.9
-Release:	6
+Release:	7
 Epoch:		1
 Summary:	X authority file utility
 Group:		Development/X11
@@ -11,6 +11,7 @@ BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xau)
 BuildRequires:	pkgconfig(xext)
 BuildRequires:	pkgconfig(xmu)
+BuildRequires:	pkgconfig(xtrans)
 BuildRequires:	x11-util-macros
 
 %description
@@ -23,9 +24,8 @@ case when using remote logins or granting access to other users).
 %setup -q
 
 %build
-%configure2_5x	--x-includes=%{_includedir}\
-		--x-libraries=%{_libdir} \
-		--enable-ipv6
+%configure	--x-includes=%{_includedir}\
+		--x-libraries=%{_libdir}
 
 %make
 
