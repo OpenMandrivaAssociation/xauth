@@ -1,6 +1,6 @@
 Name:		xauth
-Version:	1.0.9
-Release:	9
+Version:	1.0.10
+Release:	1
 Epoch:		1
 Summary:	X authority file utility
 Group:		Development/X11
@@ -35,4 +35,3 @@ case when using remote logins or granting access to other users).
 %files
 %{_bindir}/xauth
 %{_mandir}/man1/xauth.*
-
