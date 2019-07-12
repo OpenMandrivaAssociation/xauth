@@ -1,6 +1,6 @@
 Name:		xauth
-Version:	1.0.10
-Release:	3
+Version:	1.1
+Release:	1
 Epoch:		1
 Summary:	X authority file utility
 Group:		Development/X11
@@ -21,16 +21,16 @@ authorization records from one machine and merge them in on another (as is the
 case when using remote logins or granting access to other users).
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure	--x-includes=%{_includedir}\
 		--x-libraries=%{_libdir}
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %{_bindir}/xauth
