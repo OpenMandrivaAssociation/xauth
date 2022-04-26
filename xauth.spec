@@ -1,12 +1,12 @@
 Name:		xauth
-Version:	1.1.1
+Version:	1.1.2
 Release:	1
 Epoch:		1
 Summary:	X authority file utility
 Group:		Development/X11
 License:	MIT
 URL:		http://xorg.freedesktop.org
-Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xau)
 BuildRequires:	pkgconfig(xext)
@@ -34,4 +34,4 @@ case when using remote logins or granting access to other users).
 
 %files
 %{_bindir}/xauth
-%{_mandir}/man1/xauth.*
+%doc %{_mandir}/man1/xauth.*
