@@ -1,12 +1,12 @@
 Name:		xauth
-Version:	1.1.3
+Version:	1.1.4
 Release:	1
 Epoch:		1
 Summary:	X authority file utility
 Group:		Development/X11
 License:	MIT
 URL:		https://xorg.freedesktop.org
-Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
+Source0:	https://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xau)
 BuildRequires:	pkgconfig(xext)
